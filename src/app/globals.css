@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* AetherMind Theme - Light Mode */
+    --background: 0 0% 100%; /* White */
+    --foreground: 240 10% 3.9%; /* Near Black */
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 231 51% 48%; /* Deep Indigo */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 210 17% 95%; /* Light Gray */
+    --secondary-foreground: 240 10% 3.9%; /* Near Black */
+
+    --muted: 210 17% 95%; /* Light Gray */
+    --muted-foreground: 240 4% 46%; /* Gray */
+
+    --accent: 174 100% 29%; /* Teal */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 17% 90%; /* Slightly darker Light Gray */
+    --input: 210 17% 90%; /* Slightly darker Light Gray */
+    --ring: 231 51% 48%; /* Deep Indigo */
+
+    --chart-1: 231 51% 48%; /* Deep Indigo */
+    --chart-2: 174 100% 29%; /* Teal */
+    --chart-3: 210 17% 60%; /* Medium Gray */
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors (adjust if needed, using theme colors) */
+    --sidebar-background: 0 0% 100%; /* White background for sidebar */
+    --sidebar-foreground: 240 10% 3.9%; /* Near Black text */
+    --sidebar-primary: 231 51% 48%; /* Deep Indigo for active/primary elements */
+    --sidebar-primary-foreground: 0 0% 100%; /* White text on primary */
+    --sidebar-accent: 210 17% 95%; /* Light Gray for hover/accent */
+    --sidebar-accent-foreground: 240 10% 3.9%; /* Near Black text on accent */
+    --sidebar-border: 210 17% 90%; /* Border color */
+    --sidebar-ring: 231 51% 48%; /* Deep Indigo for focus rings */
+  }
+
+  .dark {
+    /* AetherMind Theme - Dark Mode (Example, adjust as needed) */
+    --background: 240 10% 3.9%; /* Near Black */
+    --foreground: 0 0% 98%; /* Near White */
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 231 51% 68%; /* Lighter Deep Indigo */
+    --primary-foreground: 240 10% 3.9%; /* Near Black */
+
+    --secondary: 240 4% 16%; /* Dark Gray */
+    --secondary-foreground: 0 0% 98%; /* Near White */
+
+    --muted: 240 4% 16%; /* Dark Gray */
+    --muted-foreground: 240 4% 60%; /* Lighter Gray */
+
+    --accent: 174 100% 49%; /* Lighter Teal */
+    --accent-foreground: 240 10% 3.9%; /* Near Black */
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 16%; /* Dark Gray */
+    --input: 240 4% 16%; /* Dark Gray */
+    --ring: 231 51% 68%; /* Lighter Deep Indigo */
+
+    --chart-1: 231 51% 68%; /* Lighter Deep Indigo */
+    --chart-2: 174 100% 49%; /* Lighter Teal */
+    --chart-3: 210 17% 70%; /* Light Gray */
+    --chart-4: 43 74% 76%;
+    --chart-5: 27 87% 77%;
+
+    /* Sidebar specific colors (dark mode) */
+    --sidebar-background: 240 10% 3.9%; /* Near Black background */
+    --sidebar-foreground: 0 0% 98%; /* Near White text */
+    --sidebar-primary: 231 51% 68%; /* Lighter Deep Indigo for active/primary */
+    --sidebar-primary-foreground: 240 10% 3.9%; /* Near Black text on primary */
+    --sidebar-accent: 240 4% 16%; /* Dark Gray for hover/accent */
+    --sidebar-accent-foreground: 0 0% 98%; /* Near White text on accent */
+    --sidebar-border: 240 4% 16%; /* Border color */
+    --sidebar-ring: 231 51% 68%; /* Lighter Deep Indigo for focus rings */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
